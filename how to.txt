@@ -1,0 +1,52 @@
+Learning Resources:
+https://www.w3schools.com/python/matplotlib_pie_charts.asp
+
+
+--> How to create a PieChart using matplotlib
+
+Step1: install the following libraries with following commands
+
+python -m pip install -U matplotlib
+pip install numpy
+
+Note: Mostly Both libraries are pre-default installed with python
+
+
+Step2: import the libraries
+import matplotlib.pyplot as pyplot
+import numpy as np
+
+
+Step3: Add the data values using numpy.array()
+data = np.array(['30', '...'])
+
+
+Step4: Add the Labels for Data values
+Labels = ['Python','...']
+
+
+Step5: Add the Colors for Data values
+colors = ['red', '#f4f4f4', 'b', '....']
+
+
+Step6: Draw a Pychart using Pie()
+pyplot.pie()
+
+
+Step7: # Create a Pie Chart with following properties
+# Start the first wedge at 0 degrees (startangle)
+# Add a Shadow
+# Add colors
+
+pyplot.pie(data, Labels=labels, colors=colors, shadow=True, startangle=0)
+
+Step8:
+# Add a Legend using legend()
+pyplot.legend()
+
+
+Step9:
+# Display the PieChart
+pyplot.show()
+
+Step10: Run the Program
